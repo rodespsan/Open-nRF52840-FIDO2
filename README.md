@@ -1,4 +1,4 @@
-# Open-nRF52840-FIDO2
+# Kajool-FIDO2
 
 For a long time until nowadays, users have used username and
 password combination as the main online authentication mechanism.
@@ -25,6 +25,7 @@ For now, visit the docs subfolder to read the dissertation that helped to create
 
 # To Do
 - Rewrite README.
+- Add explanation about Kajool mayan word.
 - Add instructions to compile the project. This istructions are inside doc subfolder, however, it must be rewritten to fit actual subtree folder in this project.
 - Add aknowledges from code used for this project.
 - Establish an open-source license for this project.
