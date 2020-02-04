@@ -1,0 +1,979 @@
+Compiling file: main.c
+In file included from ../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.h:55:0,
+                 from ../../../main.c:58:
+../../../main.c:92:33: error: 'REPORT_OUT_MAXSIZE' undeclared here (not in a function)
+                                 REPORT_OUT_MAXSIZE,
+                                 ^
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/app_usbd_hid.h:223:42: note: in definition of macro 'APP_USBD_HID_GENERIC_GLOBAL_OUT_REP_DEF'
+     static uint8_t CONCAT_2(name, _buf)[(rep_size)];             \
+                                          ^~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.h:140:5: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL'
+     APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL(instance_name,         \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:86:1: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF'
+ APP_USBD_HID_GENERIC_GLOBAL_DEF(m_app_hid_generic,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd.h:45:0,
+                 from ../../../main.c:57:
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:580:29: error: 'BRACKET_EXTRACT__' undeclared here (not in a function)
+ #define BRACKET_EXTRACT_(a) BRACKET_EXTRACT__ a
+                             ^
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_types.h:103:8: note: in definition of macro 'APP_USBD_EXTRACT_INTERVAL_FLAG'
+     (((combined) >> 16) & 0x01)
+        ^~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:707:37: note: in expansion of macro 'APP_USBD_HID_GENERIC_INTERVAL'
+ #define MACRO_MAP_1( macro, a, ...) macro(a)
+                                     ^~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:118:31: note: in expansion of macro 'MACRO_MAP_1'
+ #define CONCAT_2_(p1, p2)     p1##p2
+                               ^~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:695:29: note: in expansion of macro 'MACRO_MAP_N_'
+ #define MACRO_MAP_N(N, ...) MACRO_MAP_N_(N, __VA_ARGS__)
+                             ^~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:674:25: note: in expansion of macro 'MACRO_MAP_N'
+ #define MACRO_MAP_(...) MACRO_MAP_N(NUM_VA_ARGS_LESS_1(__VA_ARGS__), __VA_ARGS__) // To make sure it works also for 2 arguments in total
+                         ^~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:673:24: note: in expansion of macro 'MACRO_MAP_'
+ #define MACRO_MAP(...) MACRO_MAP_(__VA_ARGS__)
+                        ^~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:175:10: note: in expansion of macro 'MACRO_MAP'
+         {MACRO_MAP(APP_USBD_HID_GENERIC_INTERVAL,BRACKET_EXTRACT(endpoint_list))};  \
+          ^~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:579:29: note: in expansion of macro 'BRACKET_EXTRACT_'
+ #define BRACKET_EXTRACT(a)  BRACKET_EXTRACT_(a)
+                             ^~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:175:50: note: in expansion of macro 'BRACKET_EXTRACT'
+         {MACRO_MAP(APP_USBD_HID_GENERIC_INTERVAL,BRACKET_EXTRACT(endpoint_list))};  \
+                                                  ^~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.h:140:5: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL'
+     APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL(instance_name,         \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:86:1: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF'
+ APP_USBD_HID_GENERIC_GLOBAL_DEF(m_app_hid_generic,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:89:33: error: expected ')' before 'ENDPOINT_LIST'
+                                 ENDPOINT_LIST(),
+                                 ^
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_types.h:103:8: note: in definition of macro 'APP_USBD_EXTRACT_INTERVAL_FLAG'
+     (((combined) >> 16) & 0x01)
+        ^~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:707:37: note: in expansion of macro 'APP_USBD_HID_GENERIC_INTERVAL'
+ #define MACRO_MAP_1( macro, a, ...) macro(a)
+                                     ^~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:118:31: note: in expansion of macro 'MACRO_MAP_1'
+ #define CONCAT_2_(p1, p2)     p1##p2
+                               ^~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:695:29: note: in expansion of macro 'MACRO_MAP_N_'
+ #define MACRO_MAP_N(N, ...) MACRO_MAP_N_(N, __VA_ARGS__)
+                             ^~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:674:25: note: in expansion of macro 'MACRO_MAP_N'
+ #define MACRO_MAP_(...) MACRO_MAP_N(NUM_VA_ARGS_LESS_1(__VA_ARGS__), __VA_ARGS__) // To make sure it works also for 2 arguments in total
+                         ^~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:673:24: note: in expansion of macro 'MACRO_MAP_'
+ #define MACRO_MAP(...) MACRO_MAP_(__VA_ARGS__)
+                        ^~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:175:10: note: in expansion of macro 'MACRO_MAP'
+         {MACRO_MAP(APP_USBD_HID_GENERIC_INTERVAL,BRACKET_EXTRACT(endpoint_list))};  \
+          ^~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:579:29: note: in expansion of macro 'BRACKET_EXTRACT_'
+ #define BRACKET_EXTRACT(a)  BRACKET_EXTRACT_(a)
+                             ^~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:175:50: note: in expansion of macro 'BRACKET_EXTRACT'
+         {MACRO_MAP(APP_USBD_HID_GENERIC_INTERVAL,BRACKET_EXTRACT(endpoint_list))};  \
+                                                  ^~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.h:140:5: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL'
+     APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL(instance_name,         \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:86:1: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF'
+ APP_USBD_HID_GENERIC_GLOBAL_DEF(m_app_hid_generic,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:89:33: error: expected ')' before 'ENDPOINT_LIST'
+                                 ENDPOINT_LIST(),
+                                 ^
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_types.h:100:8: note: in definition of macro 'APP_USBD_EXTRACT_INTERVAL_VALUE'
+     (((combined) & 0xFF00) >> 8)
+        ^~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:707:37: note: in expansion of macro 'APP_USBD_HID_GENERIC_INTERVAL'
+ #define MACRO_MAP_1( macro, a, ...) macro(a)
+                                     ^~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:118:31: note: in expansion of macro 'MACRO_MAP_1'
+ #define CONCAT_2_(p1, p2)     p1##p2
+                               ^~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:695:29: note: in expansion of macro 'MACRO_MAP_N_'
+ #define MACRO_MAP_N(N, ...) MACRO_MAP_N_(N, __VA_ARGS__)
+                             ^~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:674:25: note: in expansion of macro 'MACRO_MAP_N'
+ #define MACRO_MAP_(...) MACRO_MAP_N(NUM_VA_ARGS_LESS_1(__VA_ARGS__), __VA_ARGS__) // To make sure it works also for 2 arguments in total
+                         ^~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:673:24: note: in expansion of macro 'MACRO_MAP_'
+ #define MACRO_MAP(...) MACRO_MAP_(__VA_ARGS__)
+                        ^~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:175:10: note: in expansion of macro 'MACRO_MAP'
+         {MACRO_MAP(APP_USBD_HID_GENERIC_INTERVAL,BRACKET_EXTRACT(endpoint_list))};  \
+          ^~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:579:29: note: in expansion of macro 'BRACKET_EXTRACT_'
+ #define BRACKET_EXTRACT(a)  BRACKET_EXTRACT_(a)
+                             ^~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:175:50: note: in expansion of macro 'BRACKET_EXTRACT'
+         {MACRO_MAP(APP_USBD_HID_GENERIC_INTERVAL,BRACKET_EXTRACT(endpoint_list))};  \
+                                                  ^~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.h:140:5: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL'
+     APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL(instance_name,         \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:86:1: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF'
+ APP_USBD_HID_GENERIC_GLOBAL_DEF(m_app_hid_generic,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_error.h:58:0,
+                 from ../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/button/app_button.h:69,
+                 from ../../../main.c:54:
+../../../main.c:91:33: error: 'REPORT_IN_QUEUE_SIZE' undeclared here (not in a function); did you mean 'REPORT_OUT_MAXSIZE'?
+                                 REPORT_IN_QUEUE_SIZE,
+                                 ^
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:118:35: note: in definition of macro 'CONCAT_2_'
+ #define CONCAT_2_(p1, p2)     p1##p2
+                                   ^~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/queue/nrf_queue.h:112:30: note: in expansion of macro 'CONCAT_2'
+     static _type             CONCAT_2(_name, _nrf_queue_buffer[(_size) + 1]);            \
+                              ^~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:176:5: note: in expansion of macro 'NRF_QUEUE_DEF'
+     NRF_QUEUE_DEF(app_usbd_hid_report_buffer_t,                                     \
+     ^~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.h:140:5: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL'
+     APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL(instance_name,         \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:86:1: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF'
+ APP_USBD_HID_GENERIC_GLOBAL_DEF(m_app_hid_generic,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:86:33: error: size of array 'm_app_hid_generic_queue_nrf_queue_buffer' has non-integer type
+ APP_USBD_HID_GENERIC_GLOBAL_DEF(m_app_hid_generic,
+                                 ^
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:118:31: note: in definition of macro 'CONCAT_2_'
+ #define CONCAT_2_(p1, p2)     p1##p2
+                               ^~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/queue/nrf_queue.h:112:30: note: in expansion of macro 'CONCAT_2'
+     static _type             CONCAT_2(_name, _nrf_queue_buffer[(_size) + 1]);            \
+                              ^~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:176:5: note: in expansion of macro 'NRF_QUEUE_DEF'
+     NRF_QUEUE_DEF(app_usbd_hid_report_buffer_t,                                     \
+     ^~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.h:140:5: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL'
+     APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL(instance_name,         \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:86:1: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF'
+ APP_USBD_HID_GENERIC_GLOBAL_DEF(m_app_hid_generic,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd.h:45:0,
+                 from ../../../main.c:57:
+../../../main.c:89:33: error: variably modified 'm_app_hid_generic_queue_nrf_queue_buffer' at file scope [-Werror]
+                                 ENDPOINT_LIST(),
+                                 ^
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_types.h:100:8: note: in definition of macro 'APP_USBD_EXTRACT_INTERVAL_VALUE'
+     (((combined) & 0xFF00) >> 8)
+        ^~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:707:37: note: in expansion of macro 'APP_USBD_HID_GENERIC_INTERVAL'
+ #define MACRO_MAP_1( macro, a, ...) macro(a)
+                                     ^~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:118:31: note: in expansion of macro 'MACRO_MAP_1'
+ #define CONCAT_2_(p1, p2)     p1##p2
+                               ^~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:695:29: note: in expansion of macro 'MACRO_MAP_N_'
+ #define MACRO_MAP_N(N, ...) MACRO_MAP_N_(N, __VA_ARGS__)
+                             ^~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:674:25: note: in expansion of macro 'MACRO_MAP_N'
+ #define MACRO_MAP_(...) MACRO_MAP_N(NUM_VA_ARGS_LESS_1(__VA_ARGS__), __VA_ARGS__) // To make sure it works also for 2 arguments in total
+                         ^~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:673:24: note: in expansion of macro 'MACRO_MAP_'
+ #define MACRO_MAP(...) MACRO_MAP_(__VA_ARGS__)
+                        ^~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:175:10: note: in expansion of macro 'MACRO_MAP'
+         {MACRO_MAP(APP_USBD_HID_GENERIC_INTERVAL,BRACKET_EXTRACT(endpoint_list))};  \
+          ^~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:579:29: note: in expansion of macro 'BRACKET_EXTRACT_'
+ #define BRACKET_EXTRACT(a)  BRACKET_EXTRACT_(a)
+                             ^~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:175:50: note: in expansion of macro 'BRACKET_EXTRACT'
+         {MACRO_MAP(APP_USBD_HID_GENERIC_INTERVAL,BRACKET_EXTRACT(endpoint_list))};  \
+                                                  ^~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.h:140:5: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL'
+     APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL(instance_name,         \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:86:1: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF'
+ APP_USBD_HID_GENERIC_GLOBAL_DEF(m_app_hid_generic,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:48:0,
+                 from ../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.h:60,
+                 from ../../../main.c:58:
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/queue/nrf_queue.h:124:31: error: initialization makes integer from pointer without a cast [-Werror=int-conversion]
+             .size           = (_size),                                                   \
+                               ^
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:176:5: note: in expansion of macro 'NRF_QUEUE_DEF'
+     NRF_QUEUE_DEF(app_usbd_hid_report_buffer_t,                                     \
+     ^~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.h:140:5: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL'
+     APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL(instance_name,         \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:86:1: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF'
+ APP_USBD_HID_GENERIC_GLOBAL_DEF(m_app_hid_generic,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/queue/nrf_queue.h:124:31: note: (near initialization for 'm_app_hid_generic_queue.size')
+             .size           = (_size),                                                   \
+                               ^
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:176:5: note: in expansion of macro 'NRF_QUEUE_DEF'
+     NRF_QUEUE_DEF(app_usbd_hid_report_buffer_t,                                     \
+     ^~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.h:140:5: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL'
+     APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL(instance_name,         \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:86:1: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF'
+ APP_USBD_HID_GENERIC_GLOBAL_DEF(m_app_hid_generic,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/queue/nrf_queue.h:124:31: error: initializer element is not constant
+             .size           = (_size),                                                   \
+                               ^
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:176:5: note: in expansion of macro 'NRF_QUEUE_DEF'
+     NRF_QUEUE_DEF(app_usbd_hid_report_buffer_t,                                     \
+     ^~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.h:140:5: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL'
+     APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL(instance_name,         \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:86:1: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF'
+ APP_USBD_HID_GENERIC_GLOBAL_DEF(m_app_hid_generic,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/queue/nrf_queue.h:124:31: note: (near initialization for 'm_app_hid_generic_queue.size')
+             .size           = (_size),                                                   \
+                               ^
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:176:5: note: in expansion of macro 'NRF_QUEUE_DEF'
+     NRF_QUEUE_DEF(app_usbd_hid_report_buffer_t,                                     \
+     ^~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.h:140:5: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL'
+     APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL(instance_name,         \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:86:1: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF'
+ APP_USBD_HID_GENERIC_GLOBAL_DEF(m_app_hid_generic,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd.h:46:0,
+                 from ../../../main.c:57:
+../../../main.c:87:33: error: 'HID_GENERIC_INTERFACE' undeclared here (not in a function)
+                                 HID_GENERIC_INTERFACE,
+                                 ^
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:506:21: note: in definition of macro 'APP_USBD_CLASS_IFACE_CONFIG_EXTRACT_1_'
+         { .number = iface_nr, .ep_cnt = NUM_VA_ARGS(__VA_ARGS__),                       \
+                     ^~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:118:31: note: in expansion of macro 'APP_USBD_CLASS_IFACE_CONFIG_EXTRACT_1'
+ #define CONCAT_2_(p1, p2)     p1##p2
+                               ^~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:580:29: note: in expansion of macro 'BRACKET_EXTRACT__'
+ #define BRACKET_EXTRACT_(a) BRACKET_EXTRACT__ a
+                             ^~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:579:29: note: in expansion of macro 'BRACKET_EXTRACT_'
+ #define BRACKET_EXTRACT(a)  BRACKET_EXTRACT_(a)
+                             ^~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:479:36: note: in expansion of macro 'BRACKET_EXTRACT'
+                 (N, iface_configs, BRACKET_EXTRACT(iface_config))
+                                    ^~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:870:62: note: in expansion of macro 'APP_USBD_CLASS_IFACE_CONFIG_EXTRACT_'
+ #define MACRO_MAP_FOR_PARAM_1( n_list, param, macro, a, ...) macro(a, GET_VA_ARG_1(BRACKET_EXTRACT(n_list)), param)
+                                                              ^~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:118:31: note: in expansion of macro 'MACRO_MAP_FOR_PARAM_1'
+ #define CONCAT_2_(p1, p2)     p1##p2
+                               ^~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:865:46: note: in expansion of macro 'MACRO_MAP_FOR_PARAM_N_'
+ #define MACRO_MAP_FOR_PARAM_N(N, param, ...) MACRO_MAP_FOR_PARAM_N_(N, param, __VA_ARGS__)
+                                              ^~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:853:42: note: in expansion of macro 'MACRO_MAP_FOR_PARAM_N'
+ #define MACRO_MAP_FOR_PARAM_(param, ...) MACRO_MAP_FOR_PARAM_N(NUM_VA_ARGS_LESS_1(__VA_ARGS__), param, __VA_ARGS__)
+                                          ^~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:852:41: note: in expansion of macro 'MACRO_MAP_FOR_PARAM_'
+ #define MACRO_MAP_FOR_PARAM(param, ...) MACRO_MAP_FOR_PARAM_(param, __VA_ARGS__)
+                                         ^~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:567:5: note: in expansion of macro 'MACRO_MAP_FOR_PARAM'
+     MACRO_MAP_FOR_PARAM(iface_configs,                          \
+     ^~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:580:29: note: in expansion of macro 'BRACKET_EXTRACT__'
+ #define BRACKET_EXTRACT_(a) BRACKET_EXTRACT__ a
+                             ^~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:579:29: note: in expansion of macro 'BRACKET_EXTRACT_'
+ #define BRACKET_EXTRACT(a)  BRACKET_EXTRACT_(a)
+                             ^~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:569:25: note: in expansion of macro 'BRACKET_EXTRACT'
+                         BRACKET_EXTRACT(iface_configs))
+                         ^~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:810:29: note: in expansion of macro 'APP_USBD_CLASS_IFACES_CONFIG_EXTRACT'
+                 .config = { APP_USBD_CLASS_IFACES_CONFIG_EXTRACT(interfaces_configs) }, \
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:946:9: note: in expansion of macro 'APP_USBD_CLASS_INSTANCE_INITVAL'
+         APP_USBD_CLASS_INSTANCE_INITVAL(                                        \
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:180:5: note: in expansion of macro 'APP_USBD_CLASS_INST_GLOBAL_DEF'
+     APP_USBD_CLASS_INST_GLOBAL_DEF(                                                 \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:184:9: note: in expansion of macro 'APP_USBD_HID_GENERIC_CONFIG'
+         APP_USBD_HID_GENERIC_CONFIG(interface_number, endpoint_list),               \
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.h:140:5: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL'
+     APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL(instance_name,         \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:86:1: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF'
+ APP_USBD_HID_GENERIC_GLOBAL_DEF(m_app_hid_generic,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:87:33: error: initialization makes integer from pointer without a cast [-Werror=int-conversion]
+                                 HID_GENERIC_INTERFACE,
+                                 ^
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:506:21: note: in definition of macro 'APP_USBD_CLASS_IFACE_CONFIG_EXTRACT_1_'
+         { .number = iface_nr, .ep_cnt = NUM_VA_ARGS(__VA_ARGS__),                       \
+                     ^~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:118:31: note: in expansion of macro 'APP_USBD_CLASS_IFACE_CONFIG_EXTRACT_1'
+ #define CONCAT_2_(p1, p2)     p1##p2
+                               ^~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:580:29: note: in expansion of macro 'BRACKET_EXTRACT__'
+ #define BRACKET_EXTRACT_(a) BRACKET_EXTRACT__ a
+                             ^~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:579:29: note: in expansion of macro 'BRACKET_EXTRACT_'
+ #define BRACKET_EXTRACT(a)  BRACKET_EXTRACT_(a)
+                             ^~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:479:36: note: in expansion of macro 'BRACKET_EXTRACT'
+                 (N, iface_configs, BRACKET_EXTRACT(iface_config))
+                                    ^~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:870:62: note: in expansion of macro 'APP_USBD_CLASS_IFACE_CONFIG_EXTRACT_'
+ #define MACRO_MAP_FOR_PARAM_1( n_list, param, macro, a, ...) macro(a, GET_VA_ARG_1(BRACKET_EXTRACT(n_list)), param)
+                                                              ^~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:118:31: note: in expansion of macro 'MACRO_MAP_FOR_PARAM_1'
+ #define CONCAT_2_(p1, p2)     p1##p2
+                               ^~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:865:46: note: in expansion of macro 'MACRO_MAP_FOR_PARAM_N_'
+ #define MACRO_MAP_FOR_PARAM_N(N, param, ...) MACRO_MAP_FOR_PARAM_N_(N, param, __VA_ARGS__)
+                                              ^~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:853:42: note: in expansion of macro 'MACRO_MAP_FOR_PARAM_N'
+ #define MACRO_MAP_FOR_PARAM_(param, ...) MACRO_MAP_FOR_PARAM_N(NUM_VA_ARGS_LESS_1(__VA_ARGS__), param, __VA_ARGS__)
+                                          ^~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:852:41: note: in expansion of macro 'MACRO_MAP_FOR_PARAM_'
+ #define MACRO_MAP_FOR_PARAM(param, ...) MACRO_MAP_FOR_PARAM_(param, __VA_ARGS__)
+                                         ^~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:567:5: note: in expansion of macro 'MACRO_MAP_FOR_PARAM'
+     MACRO_MAP_FOR_PARAM(iface_configs,                          \
+     ^~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:580:29: note: in expansion of macro 'BRACKET_EXTRACT__'
+ #define BRACKET_EXTRACT_(a) BRACKET_EXTRACT__ a
+                             ^~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:579:29: note: in expansion of macro 'BRACKET_EXTRACT_'
+ #define BRACKET_EXTRACT(a)  BRACKET_EXTRACT_(a)
+                             ^~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:569:25: note: in expansion of macro 'BRACKET_EXTRACT'
+                         BRACKET_EXTRACT(iface_configs))
+                         ^~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:810:29: note: in expansion of macro 'APP_USBD_CLASS_IFACES_CONFIG_EXTRACT'
+                 .config = { APP_USBD_CLASS_IFACES_CONFIG_EXTRACT(interfaces_configs) }, \
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:946:9: note: in expansion of macro 'APP_USBD_CLASS_INSTANCE_INITVAL'
+         APP_USBD_CLASS_INSTANCE_INITVAL(                                        \
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:180:5: note: in expansion of macro 'APP_USBD_CLASS_INST_GLOBAL_DEF'
+     APP_USBD_CLASS_INST_GLOBAL_DEF(                                                 \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:184:9: note: in expansion of macro 'APP_USBD_HID_GENERIC_CONFIG'
+         APP_USBD_HID_GENERIC_CONFIG(interface_number, endpoint_list),               \
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.h:140:5: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL'
+     APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL(instance_name,         \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:86:1: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF'
+ APP_USBD_HID_GENERIC_GLOBAL_DEF(m_app_hid_generic,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:87:33: note: (near initialization for 'm_app_hid_generic.specific.iface.config[0].number')
+                                 HID_GENERIC_INTERFACE,
+                                 ^
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:506:21: note: in definition of macro 'APP_USBD_CLASS_IFACE_CONFIG_EXTRACT_1_'
+         { .number = iface_nr, .ep_cnt = NUM_VA_ARGS(__VA_ARGS__),                       \
+                     ^~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:118:31: note: in expansion of macro 'APP_USBD_CLASS_IFACE_CONFIG_EXTRACT_1'
+ #define CONCAT_2_(p1, p2)     p1##p2
+                               ^~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:580:29: note: in expansion of macro 'BRACKET_EXTRACT__'
+ #define BRACKET_EXTRACT_(a) BRACKET_EXTRACT__ a
+                             ^~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:579:29: note: in expansion of macro 'BRACKET_EXTRACT_'
+ #define BRACKET_EXTRACT(a)  BRACKET_EXTRACT_(a)
+                             ^~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:479:36: note: in expansion of macro 'BRACKET_EXTRACT'
+                 (N, iface_configs, BRACKET_EXTRACT(iface_config))
+                                    ^~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:870:62: note: in expansion of macro 'APP_USBD_CLASS_IFACE_CONFIG_EXTRACT_'
+ #define MACRO_MAP_FOR_PARAM_1( n_list, param, macro, a, ...) macro(a, GET_VA_ARG_1(BRACKET_EXTRACT(n_list)), param)
+                                                              ^~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:118:31: note: in expansion of macro 'MACRO_MAP_FOR_PARAM_1'
+ #define CONCAT_2_(p1, p2)     p1##p2
+                               ^~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:865:46: note: in expansion of macro 'MACRO_MAP_FOR_PARAM_N_'
+ #define MACRO_MAP_FOR_PARAM_N(N, param, ...) MACRO_MAP_FOR_PARAM_N_(N, param, __VA_ARGS__)
+                                              ^~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:853:42: note: in expansion of macro 'MACRO_MAP_FOR_PARAM_N'
+ #define MACRO_MAP_FOR_PARAM_(param, ...) MACRO_MAP_FOR_PARAM_N(NUM_VA_ARGS_LESS_1(__VA_ARGS__), param, __VA_ARGS__)
+                                          ^~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:852:41: note: in expansion of macro 'MACRO_MAP_FOR_PARAM_'
+ #define MACRO_MAP_FOR_PARAM(param, ...) MACRO_MAP_FOR_PARAM_(param, __VA_ARGS__)
+                                         ^~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:567:5: note: in expansion of macro 'MACRO_MAP_FOR_PARAM'
+     MACRO_MAP_FOR_PARAM(iface_configs,                          \
+     ^~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:580:29: note: in expansion of macro 'BRACKET_EXTRACT__'
+ #define BRACKET_EXTRACT_(a) BRACKET_EXTRACT__ a
+                             ^~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:579:29: note: in expansion of macro 'BRACKET_EXTRACT_'
+ #define BRACKET_EXTRACT(a)  BRACKET_EXTRACT_(a)
+                             ^~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:569:25: note: in expansion of macro 'BRACKET_EXTRACT'
+                         BRACKET_EXTRACT(iface_configs))
+                         ^~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:810:29: note: in expansion of macro 'APP_USBD_CLASS_IFACES_CONFIG_EXTRACT'
+                 .config = { APP_USBD_CLASS_IFACES_CONFIG_EXTRACT(interfaces_configs) }, \
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:946:9: note: in expansion of macro 'APP_USBD_CLASS_INSTANCE_INITVAL'
+         APP_USBD_CLASS_INSTANCE_INITVAL(                                        \
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:180:5: note: in expansion of macro 'APP_USBD_CLASS_INST_GLOBAL_DEF'
+     APP_USBD_CLASS_INST_GLOBAL_DEF(                                                 \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:184:9: note: in expansion of macro 'APP_USBD_HID_GENERIC_CONFIG'
+         APP_USBD_HID_GENERIC_CONFIG(interface_number, endpoint_list),               \
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.h:140:5: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL'
+     APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL(instance_name,         \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:86:1: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF'
+ APP_USBD_HID_GENERIC_GLOBAL_DEF(m_app_hid_generic,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:87:33: error: initializer element is not constant
+                                 HID_GENERIC_INTERFACE,
+                                 ^
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:506:21: note: in definition of macro 'APP_USBD_CLASS_IFACE_CONFIG_EXTRACT_1_'
+         { .number = iface_nr, .ep_cnt = NUM_VA_ARGS(__VA_ARGS__),                       \
+                     ^~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:118:31: note: in expansion of macro 'APP_USBD_CLASS_IFACE_CONFIG_EXTRACT_1'
+ #define CONCAT_2_(p1, p2)     p1##p2
+                               ^~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:580:29: note: in expansion of macro 'BRACKET_EXTRACT__'
+ #define BRACKET_EXTRACT_(a) BRACKET_EXTRACT__ a
+                             ^~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:579:29: note: in expansion of macro 'BRACKET_EXTRACT_'
+ #define BRACKET_EXTRACT(a)  BRACKET_EXTRACT_(a)
+                             ^~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:479:36: note: in expansion of macro 'BRACKET_EXTRACT'
+                 (N, iface_configs, BRACKET_EXTRACT(iface_config))
+                                    ^~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:870:62: note: in expansion of macro 'APP_USBD_CLASS_IFACE_CONFIG_EXTRACT_'
+ #define MACRO_MAP_FOR_PARAM_1( n_list, param, macro, a, ...) macro(a, GET_VA_ARG_1(BRACKET_EXTRACT(n_list)), param)
+                                                              ^~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:118:31: note: in expansion of macro 'MACRO_MAP_FOR_PARAM_1'
+ #define CONCAT_2_(p1, p2)     p1##p2
+                               ^~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:865:46: note: in expansion of macro 'MACRO_MAP_FOR_PARAM_N_'
+ #define MACRO_MAP_FOR_PARAM_N(N, param, ...) MACRO_MAP_FOR_PARAM_N_(N, param, __VA_ARGS__)
+                                              ^~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:853:42: note: in expansion of macro 'MACRO_MAP_FOR_PARAM_N'
+ #define MACRO_MAP_FOR_PARAM_(param, ...) MACRO_MAP_FOR_PARAM_N(NUM_VA_ARGS_LESS_1(__VA_ARGS__), param, __VA_ARGS__)
+                                          ^~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:852:41: note: in expansion of macro 'MACRO_MAP_FOR_PARAM_'
+ #define MACRO_MAP_FOR_PARAM(param, ...) MACRO_MAP_FOR_PARAM_(param, __VA_ARGS__)
+                                         ^~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:567:5: note: in expansion of macro 'MACRO_MAP_FOR_PARAM'
+     MACRO_MAP_FOR_PARAM(iface_configs,                          \
+     ^~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:580:29: note: in expansion of macro 'BRACKET_EXTRACT__'
+ #define BRACKET_EXTRACT_(a) BRACKET_EXTRACT__ a
+                             ^~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:579:29: note: in expansion of macro 'BRACKET_EXTRACT_'
+ #define BRACKET_EXTRACT(a)  BRACKET_EXTRACT_(a)
+                             ^~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:569:25: note: in expansion of macro 'BRACKET_EXTRACT'
+                         BRACKET_EXTRACT(iface_configs))
+                         ^~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:810:29: note: in expansion of macro 'APP_USBD_CLASS_IFACES_CONFIG_EXTRACT'
+                 .config = { APP_USBD_CLASS_IFACES_CONFIG_EXTRACT(interfaces_configs) }, \
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:946:9: note: in expansion of macro 'APP_USBD_CLASS_INSTANCE_INITVAL'
+         APP_USBD_CLASS_INSTANCE_INITVAL(                                        \
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:180:5: note: in expansion of macro 'APP_USBD_CLASS_INST_GLOBAL_DEF'
+     APP_USBD_CLASS_INST_GLOBAL_DEF(                                                 \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:184:9: note: in expansion of macro 'APP_USBD_HID_GENERIC_CONFIG'
+         APP_USBD_HID_GENERIC_CONFIG(interface_number, endpoint_list),               \
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.h:140:5: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL'
+     APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL(instance_name,         \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:86:1: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF'
+ APP_USBD_HID_GENERIC_GLOBAL_DEF(m_app_hid_generic,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:87:33: note: (near initialization for 'm_app_hid_generic.specific.iface.config[0].number')
+                                 HID_GENERIC_INTERFACE,
+                                 ^
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:506:21: note: in definition of macro 'APP_USBD_CLASS_IFACE_CONFIG_EXTRACT_1_'
+         { .number = iface_nr, .ep_cnt = NUM_VA_ARGS(__VA_ARGS__),                       \
+                     ^~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:118:31: note: in expansion of macro 'APP_USBD_CLASS_IFACE_CONFIG_EXTRACT_1'
+ #define CONCAT_2_(p1, p2)     p1##p2
+                               ^~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:580:29: note: in expansion of macro 'BRACKET_EXTRACT__'
+ #define BRACKET_EXTRACT_(a) BRACKET_EXTRACT__ a
+                             ^~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:579:29: note: in expansion of macro 'BRACKET_EXTRACT_'
+ #define BRACKET_EXTRACT(a)  BRACKET_EXTRACT_(a)
+                             ^~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:479:36: note: in expansion of macro 'BRACKET_EXTRACT'
+                 (N, iface_configs, BRACKET_EXTRACT(iface_config))
+                                    ^~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:870:62: note: in expansion of macro 'APP_USBD_CLASS_IFACE_CONFIG_EXTRACT_'
+ #define MACRO_MAP_FOR_PARAM_1( n_list, param, macro, a, ...) macro(a, GET_VA_ARG_1(BRACKET_EXTRACT(n_list)), param)
+                                                              ^~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:118:31: note: in expansion of macro 'MACRO_MAP_FOR_PARAM_1'
+ #define CONCAT_2_(p1, p2)     p1##p2
+                               ^~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:865:46: note: in expansion of macro 'MACRO_MAP_FOR_PARAM_N_'
+ #define MACRO_MAP_FOR_PARAM_N(N, param, ...) MACRO_MAP_FOR_PARAM_N_(N, param, __VA_ARGS__)
+                                              ^~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:853:42: note: in expansion of macro 'MACRO_MAP_FOR_PARAM_N'
+ #define MACRO_MAP_FOR_PARAM_(param, ...) MACRO_MAP_FOR_PARAM_N(NUM_VA_ARGS_LESS_1(__VA_ARGS__), param, __VA_ARGS__)
+                                          ^~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:852:41: note: in expansion of macro 'MACRO_MAP_FOR_PARAM_'
+ #define MACRO_MAP_FOR_PARAM(param, ...) MACRO_MAP_FOR_PARAM_(param, __VA_ARGS__)
+                                         ^~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:567:5: note: in expansion of macro 'MACRO_MAP_FOR_PARAM'
+     MACRO_MAP_FOR_PARAM(iface_configs,                          \
+     ^~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:580:29: note: in expansion of macro 'BRACKET_EXTRACT__'
+ #define BRACKET_EXTRACT_(a) BRACKET_EXTRACT__ a
+                             ^~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:579:29: note: in expansion of macro 'BRACKET_EXTRACT_'
+ #define BRACKET_EXTRACT(a)  BRACKET_EXTRACT_(a)
+                             ^~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:569:25: note: in expansion of macro 'BRACKET_EXTRACT'
+                         BRACKET_EXTRACT(iface_configs))
+                         ^~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:810:29: note: in expansion of macro 'APP_USBD_CLASS_IFACES_CONFIG_EXTRACT'
+                 .config = { APP_USBD_CLASS_IFACES_CONFIG_EXTRACT(interfaces_configs) }, \
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:946:9: note: in expansion of macro 'APP_USBD_CLASS_INSTANCE_INITVAL'
+         APP_USBD_CLASS_INSTANCE_INITVAL(                                        \
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:180:5: note: in expansion of macro 'APP_USBD_CLASS_INST_GLOBAL_DEF'
+     APP_USBD_CLASS_INST_GLOBAL_DEF(                                                 \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:184:9: note: in expansion of macro 'APP_USBD_HID_GENERIC_CONFIG'
+         APP_USBD_HID_GENERIC_CONFIG(interface_number, endpoint_list),               \
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.h:140:5: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL'
+     APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL(instance_name,         \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:86:1: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF'
+ APP_USBD_HID_GENERIC_GLOBAL_DEF(m_app_hid_generic,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:89:33: error: expected ')' before 'ENDPOINT_LIST'
+                                 ENDPOINT_LIST(),
+                                 ^
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:463:39: note: in definition of macro 'APP_USBD_CLASS_IFACE_EP_EXTRACT_1__'
+                 {(nrf_drv_usbd_ep_t) (ep)}, 
+                                       ^~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:118:31: note: in expansion of macro 'MACRO_MAP_REC_1'
+ #define CONCAT_2_(p1, p2)     p1##p2
+                               ^~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:703:33: note: in expansion of macro 'MACRO_MAP_REC_N_'
+ #define MACRO_MAP_REC_N(N, ...) MACRO_MAP_REC_N_(N, __VA_ARGS__)
+                                 ^~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:682:29: note: in expansion of macro 'MACRO_MAP_REC_N'
+ #define MACRO_MAP_REC_(...) MACRO_MAP_REC_N(NUM_VA_ARGS_LESS_1(__VA_ARGS__), __VA_ARGS__) // To make sure it works also for 2 arguments in total
+                             ^~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:681:28: note: in expansion of macro 'MACRO_MAP_REC_'
+ #define MACRO_MAP_REC(...) MACRO_MAP_REC_(__VA_ARGS__)
+                            ^~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:460:17: note: in expansion of macro 'MACRO_MAP_REC'
+                 MACRO_MAP_REC(APP_USBD_CLASS_IFACE_EP_EXTRACT_1__, __VA_ARGS__)
+                 ^~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:457:17: note: in expansion of macro 'APP_USBD_CLASS_IFACE_EP_EXTRACT_1_'
+                 APP_USBD_CLASS_IFACE_EP_EXTRACT_1_(__VA_ARGS__)
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:118:31: note: in expansion of macro 'APP_USBD_CLASS_IFACE_EP_EXTRACT_1'
+ #define CONCAT_2_(p1, p2)     p1##p2
+                               ^~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:580:29: note: in expansion of macro 'BRACKET_EXTRACT__'
+ #define BRACKET_EXTRACT_(a) BRACKET_EXTRACT__ a
+                             ^~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:579:29: note: in expansion of macro 'BRACKET_EXTRACT_'
+ #define BRACKET_EXTRACT(a)  BRACKET_EXTRACT_(a)
+                             ^~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:442:18: note: in expansion of macro 'BRACKET_EXTRACT'
+                 (BRACKET_EXTRACT(iface_config))
+                  ^~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:707:37: note: in expansion of macro 'APP_USBD_CLASS_IFACE_EP_EXTRACT_'
+ #define MACRO_MAP_1( macro, a, ...) macro(a)
+                                     ^~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:118:31: note: in expansion of macro 'MACRO_MAP_1'
+ #define CONCAT_2_(p1, p2)     p1##p2
+                               ^~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:695:29: note: in expansion of macro 'MACRO_MAP_N_'
+ #define MACRO_MAP_N(N, ...) MACRO_MAP_N_(N, __VA_ARGS__)
+                             ^~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:674:25: note: in expansion of macro 'MACRO_MAP_N'
+ #define MACRO_MAP_(...) MACRO_MAP_N(NUM_VA_ARGS_LESS_1(__VA_ARGS__), __VA_ARGS__) // To make sure it works also for 2 arguments in total
+                         ^~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:673:24: note: in expansion of macro 'MACRO_MAP_'
+ #define MACRO_MAP(...) MACRO_MAP_(__VA_ARGS__)
+                        ^~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:583:5: note: in expansion of macro 'MACRO_MAP'
+     MACRO_MAP(APP_USBD_CLASS_IFACE_EP_EXTRACT_, BRACKET_EXTRACT(iface_configs))
+     ^~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:580:29: note: in expansion of macro 'BRACKET_EXTRACT__'
+ #define BRACKET_EXTRACT_(a) BRACKET_EXTRACT__ a
+                             ^~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:579:29: note: in expansion of macro 'BRACKET_EXTRACT_'
+ #define BRACKET_EXTRACT(a)  BRACKET_EXTRACT_(a)
+                             ^~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:583:49: note: in expansion of macro 'BRACKET_EXTRACT'
+     MACRO_MAP(APP_USBD_CLASS_IFACE_EP_EXTRACT_, BRACKET_EXTRACT(iface_configs))
+                                                 ^~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:811:29: note: in expansion of macro 'APP_USBD_CLASS_IFACES_EP_EXTRACT'
+                 .ep     = { APP_USBD_CLASS_IFACES_EP_EXTRACT(interfaces_configs) }      \
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:946:9: note: in expansion of macro 'APP_USBD_CLASS_INSTANCE_INITVAL'
+         APP_USBD_CLASS_INSTANCE_INITVAL(                                        \
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:180:5: note: in expansion of macro 'APP_USBD_CLASS_INST_GLOBAL_DEF'
+     APP_USBD_CLASS_INST_GLOBAL_DEF(                                                 \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:579:29: note: in expansion of macro 'BRACKET_EXTRACT_'
+ #define BRACKET_EXTRACT(a)  BRACKET_EXTRACT_(a)
+                             ^~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:91:64: note: in expansion of macro 'BRACKET_EXTRACT'
+ #define APP_USBD_HID_GENERIC_CONFIG(iface, endpoints) ((iface, BRACKET_EXTRACT(endpoints)))
+                                                                ^~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:184:9: note: in expansion of macro 'APP_USBD_HID_GENERIC_CONFIG'
+         APP_USBD_HID_GENERIC_CONFIG(interface_number, endpoint_list),               \
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.h:140:5: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL'
+     APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL(instance_name,         \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:86:1: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF'
+ APP_USBD_HID_GENERIC_GLOBAL_DEF(m_app_hid_generic,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:463:18: error: initializer element is not constant
+                 {(nrf_drv_usbd_ep_t) (ep)}, 
+                  ^
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:742:41: note: in expansion of macro 'APP_USBD_CLASS_IFACE_EP_EXTRACT_1__'
+ #define MACRO_MAP_REC_1( macro, a, ...) macro(a)
+                                         ^~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:118:31: note: in expansion of macro 'MACRO_MAP_REC_1'
+ #define CONCAT_2_(p1, p2)     p1##p2
+                               ^~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:703:33: note: in expansion of macro 'MACRO_MAP_REC_N_'
+ #define MACRO_MAP_REC_N(N, ...) MACRO_MAP_REC_N_(N, __VA_ARGS__)
+                                 ^~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:682:29: note: in expansion of macro 'MACRO_MAP_REC_N'
+ #define MACRO_MAP_REC_(...) MACRO_MAP_REC_N(NUM_VA_ARGS_LESS_1(__VA_ARGS__), __VA_ARGS__) // To make sure it works also for 2 arguments in total
+                             ^~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:681:28: note: in expansion of macro 'MACRO_MAP_REC_'
+ #define MACRO_MAP_REC(...) MACRO_MAP_REC_(__VA_ARGS__)
+                            ^~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:460:17: note: in expansion of macro 'MACRO_MAP_REC'
+                 MACRO_MAP_REC(APP_USBD_CLASS_IFACE_EP_EXTRACT_1__, __VA_ARGS__)
+                 ^~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:457:17: note: in expansion of macro 'APP_USBD_CLASS_IFACE_EP_EXTRACT_1_'
+                 APP_USBD_CLASS_IFACE_EP_EXTRACT_1_(__VA_ARGS__)
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:118:31: note: in expansion of macro 'APP_USBD_CLASS_IFACE_EP_EXTRACT_1'
+ #define CONCAT_2_(p1, p2)     p1##p2
+                               ^~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:116:31: note: in expansion of macro 'CONCAT_2_'
+ #define CONCAT_2(p1, p2)      CONCAT_2_(p1, p2)
+                               ^~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:440:9: note: in expansion of macro 'CONCAT_2'
+         CONCAT_2(APP_USBD_CLASS_IFACE_EP_EXTRACT_,                          \
+         ^~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:707:37: note: in expansion of macro 'APP_USBD_CLASS_IFACE_EP_EXTRACT_'
+ #define MACRO_MAP_1( macro, a, ...) macro(a)
+                                     ^~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:118:31: note: in expansion of macro 'MACRO_MAP_1'
+ #define CONCAT_2_(p1, p2)     p1##p2
+                               ^~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:695:29: note: in expansion of macro 'MACRO_MAP_N_'
+ #define MACRO_MAP_N(N, ...) MACRO_MAP_N_(N, __VA_ARGS__)
+                             ^~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:674:25: note: in expansion of macro 'MACRO_MAP_N'
+ #define MACRO_MAP_(...) MACRO_MAP_N(NUM_VA_ARGS_LESS_1(__VA_ARGS__), __VA_ARGS__) // To make sure it works also for 2 arguments in total
+                         ^~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:673:24: note: in expansion of macro 'MACRO_MAP_'
+ #define MACRO_MAP(...) MACRO_MAP_(__VA_ARGS__)
+                        ^~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:583:5: note: in expansion of macro 'MACRO_MAP'
+     MACRO_MAP(APP_USBD_CLASS_IFACE_EP_EXTRACT_, BRACKET_EXTRACT(iface_configs))
+     ^~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:811:29: note: in expansion of macro 'APP_USBD_CLASS_IFACES_EP_EXTRACT'
+                 .ep     = { APP_USBD_CLASS_IFACES_EP_EXTRACT(interfaces_configs) }      \
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:946:9: note: in expansion of macro 'APP_USBD_CLASS_INSTANCE_INITVAL'
+         APP_USBD_CLASS_INSTANCE_INITVAL(                                        \
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:180:5: note: in expansion of macro 'APP_USBD_CLASS_INST_GLOBAL_DEF'
+     APP_USBD_CLASS_INST_GLOBAL_DEF(                                                 \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.h:140:5: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL'
+     APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL(instance_name,         \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:86:1: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF'
+ APP_USBD_HID_GENERIC_GLOBAL_DEF(m_app_hid_generic,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:463:18: note: (near initialization for 'm_app_hid_generic.specific.iface.ep[0].address')
+                 {(nrf_drv_usbd_ep_t) (ep)}, 
+                  ^
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:742:41: note: in expansion of macro 'APP_USBD_CLASS_IFACE_EP_EXTRACT_1__'
+ #define MACRO_MAP_REC_1( macro, a, ...) macro(a)
+                                         ^~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:118:31: note: in expansion of macro 'MACRO_MAP_REC_1'
+ #define CONCAT_2_(p1, p2)     p1##p2
+                               ^~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:703:33: note: in expansion of macro 'MACRO_MAP_REC_N_'
+ #define MACRO_MAP_REC_N(N, ...) MACRO_MAP_REC_N_(N, __VA_ARGS__)
+                                 ^~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:682:29: note: in expansion of macro 'MACRO_MAP_REC_N'
+ #define MACRO_MAP_REC_(...) MACRO_MAP_REC_N(NUM_VA_ARGS_LESS_1(__VA_ARGS__), __VA_ARGS__) // To make sure it works also for 2 arguments in total
+                             ^~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:681:28: note: in expansion of macro 'MACRO_MAP_REC_'
+ #define MACRO_MAP_REC(...) MACRO_MAP_REC_(__VA_ARGS__)
+                            ^~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:460:17: note: in expansion of macro 'MACRO_MAP_REC'
+                 MACRO_MAP_REC(APP_USBD_CLASS_IFACE_EP_EXTRACT_1__, __VA_ARGS__)
+                 ^~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:457:17: note: in expansion of macro 'APP_USBD_CLASS_IFACE_EP_EXTRACT_1_'
+                 APP_USBD_CLASS_IFACE_EP_EXTRACT_1_(__VA_ARGS__)
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:118:31: note: in expansion of macro 'APP_USBD_CLASS_IFACE_EP_EXTRACT_1'
+ #define CONCAT_2_(p1, p2)     p1##p2
+                               ^~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:116:31: note: in expansion of macro 'CONCAT_2_'
+ #define CONCAT_2(p1, p2)      CONCAT_2_(p1, p2)
+                               ^~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:440:9: note: in expansion of macro 'CONCAT_2'
+         CONCAT_2(APP_USBD_CLASS_IFACE_EP_EXTRACT_,                          \
+         ^~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:707:37: note: in expansion of macro 'APP_USBD_CLASS_IFACE_EP_EXTRACT_'
+ #define MACRO_MAP_1( macro, a, ...) macro(a)
+                                     ^~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:118:31: note: in expansion of macro 'MACRO_MAP_1'
+ #define CONCAT_2_(p1, p2)     p1##p2
+                               ^~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:695:29: note: in expansion of macro 'MACRO_MAP_N_'
+ #define MACRO_MAP_N(N, ...) MACRO_MAP_N_(N, __VA_ARGS__)
+                             ^~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:674:25: note: in expansion of macro 'MACRO_MAP_N'
+ #define MACRO_MAP_(...) MACRO_MAP_N(NUM_VA_ARGS_LESS_1(__VA_ARGS__), __VA_ARGS__) // To make sure it works also for 2 arguments in total
+                         ^~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:673:24: note: in expansion of macro 'MACRO_MAP_'
+ #define MACRO_MAP(...) MACRO_MAP_(__VA_ARGS__)
+                        ^~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:583:5: note: in expansion of macro 'MACRO_MAP'
+     MACRO_MAP(APP_USBD_CLASS_IFACE_EP_EXTRACT_, BRACKET_EXTRACT(iface_configs))
+     ^~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:811:29: note: in expansion of macro 'APP_USBD_CLASS_IFACES_EP_EXTRACT'
+                 .ep     = { APP_USBD_CLASS_IFACES_EP_EXTRACT(interfaces_configs) }      \
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:946:9: note: in expansion of macro 'APP_USBD_CLASS_INSTANCE_INITVAL'
+         APP_USBD_CLASS_INSTANCE_INITVAL(                                        \
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:180:5: note: in expansion of macro 'APP_USBD_CLASS_INST_GLOBAL_DEF'
+     APP_USBD_CLASS_INST_GLOBAL_DEF(                                                 \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.h:140:5: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL'
+     APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL(instance_name,         \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:86:1: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF'
+ APP_USBD_HID_GENERIC_GLOBAL_DEF(m_app_hid_generic,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/integration/nrfx/nrfx_glue.h:71:0,
+                 from ../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/modules/nrfx/nrfx.h:46,
+                 from ../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/modules/nrfx/hal/nrf_gpio.h:44,
+                 from ../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/button/app_button.h:70,
+                 from ../../../main.c:54:
+../../../main.c:88:33: error: 'hid_user_ev_handler' undeclared here (not in a function); did you mean 'app_error_handler'?
+                                 hid_user_ev_handler,
+                                 ^
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:581:32: note: in definition of macro 'BRACKET_EXTRACT__'
+ #define BRACKET_EXTRACT__(...) __VA_ARGS__
+                                ^~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:579:29: note: in expansion of macro 'BRACKET_EXTRACT_'
+ #define BRACKET_EXTRACT(a)  BRACKET_EXTRACT_(a)
+                             ^~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:813:13: note: in expansion of macro 'BRACKET_EXTRACT'
+             BRACKET_EXTRACT(class_config_part)                                          \
+             ^~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:946:9: note: in expansion of macro 'APP_USBD_CLASS_INSTANCE_INITVAL'
+         APP_USBD_CLASS_INSTANCE_INITVAL(                                        \
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:180:5: note: in expansion of macro 'APP_USBD_CLASS_INST_GLOBAL_DEF'
+     APP_USBD_CLASS_INST_GLOBAL_DEF(                                                 \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:135:22: note: in expansion of macro 'APP_USBD_HID_INST_CONFIG'
+          .hid_inst = APP_USBD_HID_INST_CONFIG(subclass_descriptors,           \
+                      ^~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:185:10: note: in expansion of macro 'APP_USBD_HID_GENERIC_INST_CONFIG'
+         (APP_USBD_HID_GENERIC_INST_CONFIG(&CONCAT_2(instance_name, _in),            \
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.h:140:5: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL'
+     APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL(instance_name,         \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:86:1: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF'
+ APP_USBD_HID_GENERIC_GLOBAL_DEF(m_app_hid_generic,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:88:33: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+                                 hid_user_ev_handler,
+                                 ^
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:581:32: note: in definition of macro 'BRACKET_EXTRACT__'
+ #define BRACKET_EXTRACT__(...) __VA_ARGS__
+                                ^~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:579:29: note: in expansion of macro 'BRACKET_EXTRACT_'
+ #define BRACKET_EXTRACT(a)  BRACKET_EXTRACT_(a)
+                             ^~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:813:13: note: in expansion of macro 'BRACKET_EXTRACT'
+             BRACKET_EXTRACT(class_config_part)                                          \
+             ^~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:946:9: note: in expansion of macro 'APP_USBD_CLASS_INSTANCE_INITVAL'
+         APP_USBD_CLASS_INSTANCE_INITVAL(                                        \
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:180:5: note: in expansion of macro 'APP_USBD_CLASS_INST_GLOBAL_DEF'
+     APP_USBD_CLASS_INST_GLOBAL_DEF(                                                 \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:135:22: note: in expansion of macro 'APP_USBD_HID_INST_CONFIG'
+          .hid_inst = APP_USBD_HID_INST_CONFIG(subclass_descriptors,           \
+                      ^~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:185:10: note: in expansion of macro 'APP_USBD_HID_GENERIC_INST_CONFIG'
+         (APP_USBD_HID_GENERIC_INST_CONFIG(&CONCAT_2(instance_name, _in),            \
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.h:140:5: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL'
+     APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL(instance_name,         \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:86:1: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF'
+ APP_USBD_HID_GENERIC_GLOBAL_DEF(m_app_hid_generic,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:88:33: note: (near initialization for 'm_app_hid_generic.specific.inst.hid_inst.user_event_handler')
+                                 hid_user_ev_handler,
+                                 ^
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:581:32: note: in definition of macro 'BRACKET_EXTRACT__'
+ #define BRACKET_EXTRACT__(...) __VA_ARGS__
+                                ^~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:579:29: note: in expansion of macro 'BRACKET_EXTRACT_'
+ #define BRACKET_EXTRACT(a)  BRACKET_EXTRACT_(a)
+                             ^~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:813:13: note: in expansion of macro 'BRACKET_EXTRACT'
+             BRACKET_EXTRACT(class_config_part)                                          \
+             ^~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:946:9: note: in expansion of macro 'APP_USBD_CLASS_INSTANCE_INITVAL'
+         APP_USBD_CLASS_INSTANCE_INITVAL(                                        \
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:180:5: note: in expansion of macro 'APP_USBD_CLASS_INST_GLOBAL_DEF'
+     APP_USBD_CLASS_INST_GLOBAL_DEF(                                                 \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:135:22: note: in expansion of macro 'APP_USBD_HID_INST_CONFIG'
+          .hid_inst = APP_USBD_HID_INST_CONFIG(subclass_descriptors,           \
+                      ^~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:185:10: note: in expansion of macro 'APP_USBD_HID_GENERIC_INST_CONFIG'
+         (APP_USBD_HID_GENERIC_INST_CONFIG(&CONCAT_2(instance_name, _in),            \
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.h:140:5: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL'
+     APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL(instance_name,         \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:86:1: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF'
+ APP_USBD_HID_GENERIC_GLOBAL_DEF(m_app_hid_generic,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:88:33: error: initializer element is not constant
+                                 hid_user_ev_handler,
+                                 ^
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:581:32: note: in definition of macro 'BRACKET_EXTRACT__'
+ #define BRACKET_EXTRACT__(...) __VA_ARGS__
+                                ^~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:579:29: note: in expansion of macro 'BRACKET_EXTRACT_'
+ #define BRACKET_EXTRACT(a)  BRACKET_EXTRACT_(a)
+                             ^~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:813:13: note: in expansion of macro 'BRACKET_EXTRACT'
+             BRACKET_EXTRACT(class_config_part)                                          \
+             ^~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:946:9: note: in expansion of macro 'APP_USBD_CLASS_INSTANCE_INITVAL'
+         APP_USBD_CLASS_INSTANCE_INITVAL(                                        \
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:180:5: note: in expansion of macro 'APP_USBD_CLASS_INST_GLOBAL_DEF'
+     APP_USBD_CLASS_INST_GLOBAL_DEF(                                                 \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:135:22: note: in expansion of macro 'APP_USBD_HID_INST_CONFIG'
+          .hid_inst = APP_USBD_HID_INST_CONFIG(subclass_descriptors,           \
+                      ^~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:185:10: note: in expansion of macro 'APP_USBD_HID_GENERIC_INST_CONFIG'
+         (APP_USBD_HID_GENERIC_INST_CONFIG(&CONCAT_2(instance_name, _in),            \
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.h:140:5: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL'
+     APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL(instance_name,         \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:86:1: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF'
+ APP_USBD_HID_GENERIC_GLOBAL_DEF(m_app_hid_generic,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:88:33: note: (near initialization for 'm_app_hid_generic.specific.inst.hid_inst.user_event_handler')
+                                 hid_user_ev_handler,
+                                 ^
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:581:32: note: in definition of macro 'BRACKET_EXTRACT__'
+ #define BRACKET_EXTRACT__(...) __VA_ARGS__
+                                ^~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_util.h:579:29: note: in expansion of macro 'BRACKET_EXTRACT_'
+ #define BRACKET_EXTRACT(a)  BRACKET_EXTRACT_(a)
+                             ^~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:813:13: note: in expansion of macro 'BRACKET_EXTRACT'
+             BRACKET_EXTRACT(class_config_part)                                          \
+             ^~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/app_usbd_class_base.h:946:9: note: in expansion of macro 'APP_USBD_CLASS_INSTANCE_INITVAL'
+         APP_USBD_CLASS_INSTANCE_INITVAL(                                        \
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:180:5: note: in expansion of macro 'APP_USBD_CLASS_INST_GLOBAL_DEF'
+     APP_USBD_CLASS_INST_GLOBAL_DEF(                                                 \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:135:22: note: in expansion of macro 'APP_USBD_HID_INST_CONFIG'
+          .hid_inst = APP_USBD_HID_INST_CONFIG(subclass_descriptors,           \
+                      ^~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:185:10: note: in expansion of macro 'APP_USBD_HID_GENERIC_INST_CONFIG'
+         (APP_USBD_HID_GENERIC_INST_CONFIG(&CONCAT_2(instance_name, _in),            \
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.h:140:5: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL'
+     APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL(instance_name,         \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:86:1: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF'
+ APP_USBD_HID_GENERIC_GLOBAL_DEF(m_app_hid_generic,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c: In function 'main':
+../../../main.c:223:35: error: variable 'class_inst_generic' set but not used [-Werror=unused-but-set-variable]
+     app_usbd_class_inst_t const * class_inst_generic;
+                                   ^~~~~~~~~~~~~~~~~~
+In file included from ../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/app_error.h:58:0,
+                 from ../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/button/app_button.h:69,
+                 from ../../../main.c:54:
+At top level:
+../../../main.c:86:33: error: 'm_app_hid_generic_out_buf' defined but not used [-Werror=unused-variable]
+ APP_USBD_HID_GENERIC_GLOBAL_DEF(m_app_hid_generic,
+                                 ^
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:118:31: note: in definition of macro 'CONCAT_2_'
+ #define CONCAT_2_(p1, p2)     p1##p2
+                               ^~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/app_usbd_hid.h:223:20: note: in expansion of macro 'CONCAT_2'
+     static uint8_t CONCAT_2(name, _buf)[(rep_size)];             \
+                    ^~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:172:5: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_OUT_REP_DEF'
+     APP_USBD_HID_GENERIC_GLOBAL_OUT_REP_DEF(CONCAT_2(instance_name, _out),          \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/util/nordic_common.h:116:31: note: in expansion of macro 'CONCAT_2_'
+ #define CONCAT_2(p1, p2)      CONCAT_2_(p1, p2)
+                               ^~~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic_internal.h:172:45: note: in expansion of macro 'CONCAT_2'
+     APP_USBD_HID_GENERIC_GLOBAL_OUT_REP_DEF(CONCAT_2(instance_name, _out),          \
+                                             ^~~~~~~~
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/libraries/usbd/class/hid/generic/app_usbd_hid_generic.h:140:5: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL'
+     APP_USBD_HID_GENERIC_GLOBAL_DEF_INTERNAL(instance_name,         \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../main.c:86:1: note: in expansion of macro 'APP_USBD_HID_GENERIC_GLOBAL_DEF'
+ APP_USBD_HID_GENERIC_GLOBAL_DEF(m_app_hid_generic,
+ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+../../../../../../../nRF5_SDK/nRF5_SDK_15.3.0_59ac345/components/toolchain/gcc/Makefile.common:272: recipe for target '_build/nrf52840_xxaa/main.c.o' failed
+make: *** [_build/nrf52840_xxaa/main.c.o] Error 1
